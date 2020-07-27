@@ -48,6 +48,14 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.global-nav img {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
 #page_top{
     width: 90px;
     height: 90px;
