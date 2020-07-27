@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-feature-settings: "palt";
+    font-size: 16pt;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+.global-nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    padding-left: 1.5rem;
+    background-color: #000;
+    box-shadow: 0 2px 1rem rgb(32, 32, 32);
+}
+
+.global-nav h1 {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    flex: 1;
+}
+
+.global-nav ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.global-nav ul a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.25rem; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#page_top{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+}
+
+#page_top a{
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;
+}
+
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f102';
+    font-size: 25px;
+    color: #3f98ef;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+}
+
+#page_top a::after{
+    content: 'PAGE TOP';
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    color: #3f98ef;
+}
+
+.contents {
+    padding-top: 5rem;
+}
+
+.contents h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px #fff solid;
+    margin-bottom: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.contents ul {
+    display: inline-block;
+    text-align: center;
+}
+
+.contents ul li {
+    list-style: none;
+    display: inline-block;
+    width: 500px;
+    height: 325px;
+    border: 1px #000 solid;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.contents ul li img {
+    width: 480px;
+    height: 270px;
+    border: 1px #000 solid;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+}
+
+.popup.is-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 50px;
+    z-index: 2;
+    background-color: #fff;
+    text-align: left;
+}
+
+.popup-inner img {
+    width: 100%;
+}
+
+.popup-inner p {
+    font-size: 0.7rem;
+}
+
+.close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.close-btn i {
+    font-size: 20px;
+    color: #333;
+}
+
+.black-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1;
+    cursor: pointer;
+}
+
+button {
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.863);
+    color: #fff;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.700);
+    border: 1px rgba(0, 0, 0, 0.700) solid;
+}
