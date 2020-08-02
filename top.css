@@ -181,6 +181,7 @@ h3 {
 .sample ul li img {
     width: 480px;
     height: 270px;
+    border: 1px #000 solid;
 }
 
 .popup {
