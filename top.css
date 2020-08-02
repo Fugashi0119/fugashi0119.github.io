@@ -55,6 +55,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.global-nav ul a:hover {
+    text-decoration: underline #fff solid;
+}
+
 #page_top{
     width: 90px;
     height: 90px;

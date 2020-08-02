@@ -48,6 +48,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.global-nav ul a:hover {
+    text-decoration: underline #fff solid;
+}
+
 .global-nav img {
     height: 1.5rem;
     width: 1.5rem;
